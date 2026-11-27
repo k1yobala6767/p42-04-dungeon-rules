@@ -39,7 +39,7 @@ public static class Levels
         {
             new FloorItem(Catalog.SmallPotion(), 2, 2),
             new FloorItem(Catalog.SmallPotion(), 5, 7),
-            new FloorItem(Catalog.Key(), 8, 2),
+            new FloorItem(Catalog.Key(), 8, 1),
         };
     }
 
