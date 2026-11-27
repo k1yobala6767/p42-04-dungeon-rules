@@ -19,10 +19,11 @@ public static class Combat
     {
         int damage = Damage(player.Attack, monster.Armor);
         monster.TakeDamage(damage);
-        player.AddGold(monster.Reward);
-
         if (!monster.IsAlive)
-            return "Вы убили: " + monster.Name + ". Награда: " + monster.Reward + " зол.";
+    {
+    player.AddGold(monster.Reward);
+    return "Вы убили: " + monster.Name + ". Награда: " + monster.Reward + " зол.";
+    }
 
         return "Вы ударили: " + monster.Name + " (-" + damage + "), у него осталось " + monster.Health + " HP.";
     }
