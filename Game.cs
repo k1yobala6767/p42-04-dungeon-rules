@@ -75,8 +75,8 @@ public class Game
         for (int i = 0; i < Monsters.Length; i++)
         {
             Monster monster = Monsters[i];
-            if (!IsNextToPlayer(monster))
-                continue;
+            if (!monster.IsAlive || !IsNextToPlayer(monster))
+            continue;
 
             if (message != "")
                 message += " ";
